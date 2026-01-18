@@ -11,3 +11,6 @@ node_modules/
 # IDE
 .vscode/
 .idea/
+
+structure.txt
+package-lock.json
