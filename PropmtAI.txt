@@ -1,5 +1,14 @@
-propmt หลักที่ใช้ในงาน
-- ใช้ In-memory Map ดีไหมข้อดีข้อเสีย
-- ตรวจสอบโค้ด
-- วิธีทำ terraform on aws ทีละขั้นตอน
-- ตรวจสอบและให้คะแนน ScalingQuestion
+# AI Tools Usage
+
+## เครื่องมือที่ใช้
+1. **Claude AI** (https://claude.ai)
+
+## Prompt 
+
+### Prompt 1: ใช้ In-memory Map ดีไหมข้อดีข้อเสีย
+
+### Prompt 2: ตรวจสอบโค้ด check code
+
+### Prompt 3: how terraform on aws step by step
+
+### Prompt 4: ตรวจสอบและให้คะแนน ScalingQuestion
