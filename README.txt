@@ -67,7 +67,7 @@ Header: x-user-id: testuser
 ### 3. ดึงข่าวสาร (มี Rate Limit)
 ```bash
 GET /api/news
-Header: x-user-id: user123
+Header: x-user-id: testuser
 ```
 **Response:**
 ```json
@@ -129,7 +129,7 @@ Header: x-user-id: user123
 ### 3. ตรวจสอบ Quota ที่เหลือ
 ```bash
 GET /api/quota
-Header: x-user-id: user123
+Header: x-user-id: testuser
 ```
 
 **Response:**
