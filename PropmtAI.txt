@@ -1,0 +1,5 @@
+propmt หลักที่ใช้ในงาน
+- ใช้ In-memory Map ดีไหมข้อดีข้อเสีย
+- ตรวจสอบโค้ด
+- วิธีทำ terraform on aws ทีละขั้นตอน
+- ตรวจสอบและให้คะแนน ScalingQuestion

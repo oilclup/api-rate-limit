@@ -1,0 +1,40 @@
+api-rate-limit/                 # Root directory
+│
+├── configs/                    # การตั้งค่าต่างๆ ของแอพ
+│   ├── app.js                 # ตั้งค่า Express app
+│   ├── cors.js                # ตั้งค่า CORS
+│   └── express.js             # ตั้งค่า Express middleware
+│
+├── middleware/                 # Middleware ทั้งหมด
+│   └── rate_limit.js          # Rate limiting logic
+│
+├── modules/                    # แยก feature ตาม module
+│   ├── news/                  # Module ข่าว
+│   │   └── news.routes.js
+│   │
+│   ├── quota/                 # Module quota
+│   │   └── quota.routes.js
+│   │
+│   └── users/                 # Module users
+│       └── users.routes.js
+│
+├── node_modules/              # Dependencies (auto-generated)
+│
+├── seed/                      # ข้อมูล seed/mock data
+│   └── news_data_seed.json
+│
+├── utils/                     # Utility functions
+│   └── pagination.js
+│
+├── .env.development          # Environment variables (dev)
+├── .env.production           # Environment variables (prod)
+├── .env.staging              # Environment variables (staging)
+├── .gitignore                # Git ignore rules
+├── app.js                    # Main app entry (duplicate?)
+├── index.js                  # Server entry point
+├── package-lock.json         # Lock file
+├── package.json              # Project dependencies
+├── README.txt                # Documentation
+└── ScalingQuestion.txt       # Scaling notes
+
+

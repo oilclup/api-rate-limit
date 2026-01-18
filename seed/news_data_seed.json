@@ -1,0 +1,143 @@
+[
+     {
+       "id": 1,
+       "title": "Breaking: AI Advances in 2025",
+       "content": "Artificial Intelligence continues to evolve with new breakthroughs...",
+       "publishedAt": "2025-01-01T08:00:00.000Z",
+       "category": "Technology"
+     },
+     {
+       "id": 2,
+       "title": "Global Markets Update",
+       "content": "Stock markets show positive trends across major indices...",
+       "publishedAt": "2025-01-02T09:10:00.000Z",
+       "category": "Finance"
+     },
+     {
+       "id": 3,
+       "title": "Climate Summit Concludes",
+       "content": "World leaders agree on new climate initiatives...",
+       "publishedAt": "2025-01-03T10:00:00.000Z",
+       "category": "Environment"
+     },
+     {
+       "id": 4,
+       "title": "Tech Startup Raises $50M",
+       "content": "Innovative startup secures major funding round...",
+       "publishedAt": "2025-01-04T11:20:00.000Z",
+       "category": "Business"
+     },
+     {
+       "id": 5,
+       "title": "Space Exploration Milestone",
+       "content": "New discoveries in deep space exploration...",
+       "publishedAt": "2025-01-05T12:00:00.000Z",
+       "category": "Science"
+     },
+     {
+       "id": 6,
+       "title": "New iPhone Leaks",
+       "content": "Rumors suggest revolutionary battery improvements...",
+       "publishedAt": "2025-01-06T08:30:00.000Z",
+       "category": "Technology"
+     },
+     {
+       "id": 7,
+       "title": "Bitcoin Hits New High",
+       "content": "Crypto market surges as Bitcoin crosses new milestone...",
+       "publishedAt": "2025-01-07T09:00:00.000Z",
+       "category": "Finance"
+     },
+     {
+       "id": 8,
+       "title": "Wildfire Situation Improves",
+       "content": "Firefighters gain control over forest fire zones...",
+       "publishedAt": "2025-01-08T10:15:00.000Z",
+       "category": "Environment"
+     },
+     {
+       "id": 9,
+       "title": "Remote Work Becomes Standard",
+       "content": "More companies adopt remote-first policy...",
+       "publishedAt": "2025-01-09T13:00:00.000Z",
+       "category": "Business"
+     },
+     {
+       "id": 10,
+       "title": "Mars Rover Sends New Images",
+       "content": "NASA releases high resolution images from Mars...",
+       "publishedAt": "2025-01-10T14:45:00.000Z",
+       "category": "Science"
+     },
+     {
+       "id": 11,
+       "title": "New JavaScript Framework Released",
+       "content": "Developer community excited about faster performance...",
+       "publishedAt": "2025-01-11T15:00:00.000Z",
+       "category": "Technology"
+     },
+     {
+       "id": 12,
+       "title": "Oil Prices Decline",
+       "content": "Global supply increases affect oil markets...",
+       "publishedAt": "2025-01-12T16:00:00.000Z",
+       "category": "Finance"
+     },
+     {
+       "id": 13,
+       "title": "Plastic Waste Reduction Campaign",
+       "content": "New policies aim to reduce ocean pollution...",
+       "publishedAt": "2025-01-13T08:00:00.000Z",
+       "category": "Environment"
+     },
+     {
+       "id": 14,
+       "title": "E-commerce Growth in Asia",
+       "content": "Online shopping demand rises significantly...",
+       "publishedAt": "2025-01-14T09:30:00.000Z",
+       "category": "Business"
+     },
+     {
+       "id": 15,
+       "title": "New Vaccine Research Shows Promise",
+       "content": "Scientists report positive early trial results...",
+       "publishedAt": "2025-01-15T10:00:00.000Z",
+       "category": "Science"
+     },
+     {
+       "id": 16,
+       "title": "AI Used in Medical Diagnosis",
+       "content": "Hospitals begin adopting AI-assisted diagnosis systems...",
+       "publishedAt": "2025-01-16T11:00:00.000Z",
+       "category": "Technology"
+     },
+     {
+       "id": 17,
+       "title": "Gold Prices Stabilize",
+       "content": "Investors return to safe assets amid uncertainty...",
+       "publishedAt": "2025-01-17T12:00:00.000Z",
+       "category": "Finance"
+     },
+     {
+       "id": 18,
+       "title": "Coral Reef Restoration Project",
+       "content": "Marine biologists report positive reef recovery...",
+       "publishedAt": "2025-01-18T13:00:00.000Z",
+       "category": "Environment"
+     },
+     {
+       "id": 19,
+       "title": "Startup Culture Thrives",
+       "content": "Young entrepreneurs reshape business ecosystems...",
+       "publishedAt": "2025-01-19T14:00:00.000Z",
+       "category": "Business"
+     },
+     {
+       "id": 20,
+       "title": "Quantum Computing Breakthrough",
+       "content": "Researchers achieve faster quantum processing...",
+       "publishedAt": "2025-01-20T15:00:00.000Z",
+       "category": "Science"
+     }
+   ]
+   

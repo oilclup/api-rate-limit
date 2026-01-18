@@ -1,0 +1,5 @@
+1. In-memory Map จะพังแน่นอนเพราะเมื่อ restart server ข้อมูล rate limit จะหายหมด และเมื่อมีผู้ใช้ 100,000 คน ข้อมูลจะสะสมเรื่อยๆ โดยไม่มีกลไกลบออก ทำให้หน่วยความจำเต็มจน ไปจนถึง server ล่มได้
+2. Single server รับ 2,000 req/s ไม่ไหว จึงต้อง scale ออกหลาย server ด้วย load balancer แต่การใช้ in-memory Map แยกกันในแต่ละ server จะทำให้ state ไม่ตรงกันส่งผลให้การนับ rate limit ผิดพลาด
+3. การเพิ่ม server แบบแนวตั้งเป็นอีก 1 ทางเลือกแต่ช่วยได้ในระยะสั้น และมีข้อจำกัดด้านเพดานของเครื่องและต้นทุนสูง จึงควรออกแบบระบบให้รองรับ horizontal scaling สำหรับการใช้งานระยะยาว
+4. เปลี่ยนจาก Map เป็น Redis เพื่อเป็นฐานข้อมูลกลางที่ทุก server เข้าถึงได้ Redis เหมาะกับ rate limiting เพราะมี คำสั่ง INCR และ EXPIRE ที่ทำงานเร็วมาก 
+5. เพิ่ม monitoring & auto-scaling ใช้ CloudWatch หรือ Prometheus ดู metrics สำคัญ เช่น Redis CPU usage, API latency, request rate แล้วตั้ง auto-scaling ให้เพิ่ม-ลด server อัตโนมัติตามปริมาณงาน เพื่อรับมือ traffic ที่เปลี่ยนแปลงและประหยัดค่าใช้จ่าย
