@@ -58,21 +58,16 @@ resource "aws_lambda_function" "api" {
   filename         = data.archive_file.lambda_zip.output_path
   function_name    = var.function_name
   role            = aws_iam_role.lambda_role.arn
-  handler         = "lambda.handler"
+  handler         = "lambda.handler" 
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
   runtime         = "nodejs18.x"
   timeout         = var.timeout
   memory_size     = var.memory_size
-
+  
   environment {
     variables = {
       NODE_ENV = var.environment
     }
-  }
-
-  tags = {
-    Environment = var.environment
-    ManagedBy   = "Terraform"
   }
 }
 
@@ -98,6 +93,18 @@ resource "aws_apigatewayv2_integration" "lambda" {
   integration_uri  = aws_lambda_function.api.invoke_arn
   
   payload_format_version = "2.0"
+}
+
+resource "aws_apigatewayv2_route" "health" {
+  api_id    = aws_apigatewayv2_api.api.id
+  route_key = "GET /health"
+  target    = "integrations/${aws_apigatewayv2_integration.lambda.id}"
+}
+
+resource "aws_apigatewayv2_route" "api" {
+  api_id    = aws_apigatewayv2_api.api.id
+  route_key = "ANY /api/{proxy+}"
+  target    = "integrations/${aws_apigatewayv2_integration.lambda.id}"
 }
 
 resource "aws_apigatewayv2_route" "default" {
